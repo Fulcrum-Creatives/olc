@@ -1,0 +1,21 @@
+/*---------------------------------------------------------
+ * Tagline
+---------------------------------------------------------*/
+.tagline {
+  padding: 6em 1em;
+}
+.tagline__heading,
+.taline__text {
+  text-align: center;
+  letter-spacing: 2px;
+}
+.tagline__heading {
+  @include font-size(36);
+  margin: 0;
+  @include media-query(480px) {
+    @include font-size(53);
+  }
+}
+.taline__text {
+  @include font-size(26);
+}

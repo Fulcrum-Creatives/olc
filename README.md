@@ -1,2 +1,2 @@
-# olc
-The Ohio Library Council Theme
+# fc-wp-child-theme
+A child theme boilerplate for the fc-wp-framework
