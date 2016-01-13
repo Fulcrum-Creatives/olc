@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Board Of Directors
+Template Name: Board Members
 */
 get_header();
 ?>
@@ -12,7 +12,9 @@ get_header();
         the_post();
       ?>
       <section id="post-<?php the_ID(); ?>" <?php post_class('entry__members'); ?> aria-labelledby="section-heading-<?php the_ID(); ?>" role="article">
-        <?php fcwp_page_title(); ?>
+        <header class="entry__header">
+            <?php fcwp_page_title(); ?>
+          </header>
       </section>
       <?php
       endwhile; 
@@ -27,7 +29,7 @@ get_header();
             'post_type'      => 'members',
             'posts_per_page' => '99',
             'meta_key'       => 'olc_members_type',
-            'meta_value'     => 'board',
+            'meta_value'     => 'members',
             'no_found_rows'  => true
         ));
         if( have_posts() ) :
