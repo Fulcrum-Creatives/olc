@@ -263,39 +263,6 @@ function fcwp_news_listing( $slug, $title, $post_per_page = '2' ) {
 }
 
 /*---------------------------------------------------------
- * Custom Images
----------------------------------------------------------*/
-function html5_insert_image($html, $id, $caption, $title, $align, $url) {
-  $html5 = "<figure id='post-$id media-$id' class='align-$align'>";
-  $html5 .= "<img src='$url' alt='$title' />";
-  if ($caption) {
-    $html5 .= "<figcaption>$caption</figcaption>";
-  }
-  $html5 .= "</figure>";
-  return $html5;
-}
-add_filter( 'image_send_to_editor', 'html5_insert_image', 10, 9 );
-
-/*---------------------------------------------------------
- * Custom Image Output
----------------------------------------------------------*/
-function fcwp_post_images( $content ) {
-  $content = preg_replace(
-    array('{<a(.*?)(wp-att|wp-content\/uploads)[^>]*><img}',
-    '{ wp-image-[0-9]*" /></a>}'),
-    array('<img','" />'),
-    $content
-  );
-  $content = preg_replace(
-    '/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', 
-    '\1\2\3', 
-    $content
-  );
-  return $content;
-}
-add_filter( 'the_content', 'fcwp_post_images' );
-
-/*---------------------------------------------------------
  * Frontpage Boxes
 ---------------------------------------------------------*/
 function fcwp_display_box( $name, $url, $image, $retina, $svg, $alt, $heading, $text ) {
