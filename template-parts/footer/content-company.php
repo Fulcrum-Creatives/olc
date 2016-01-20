@@ -2,7 +2,7 @@
 $olc_company_name   = fcwp_get_field( 'olc_company_name', true );
 $olc_footer_tagline = fcwp_get_field( 'olc_footer_tagline', true );
 $olc_address        = fcwp_get_field( 'olc_address', true );
-$olc_apt_suite        = fcwp_get_field( 'olc_apt_suite', true );
+$olc_apt_suite      = fcwp_get_field( 'olc_apt_suite', true );
 $olc_city           = fcwp_get_field( 'olc_city', true );
 $olc_state          = fcwp_get_field( 'olc_state', true );
 $olc_zip_code       = fcwp_get_field( 'olc_zip_code', true );
