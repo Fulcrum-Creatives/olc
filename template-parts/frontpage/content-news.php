@@ -3,7 +3,7 @@
     <?php
     $news_query = new WP_Query(array(
         'post_type'         =>'post',
-        'posts_per_page'    => '1',
+        'posts_per_page'    => '3',
         'no_found_rows'     => true
     ));
     if(have_posts()) : 

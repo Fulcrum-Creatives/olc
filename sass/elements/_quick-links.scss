@@ -2,7 +2,7 @@
  * Quicklinks
 ---------------------------------------------------------*/
 .quick-links {
-  width: 304px;
+  width: 320px;
   z-index: 1000;
   right: 0px;
   .col__1-2 {
@@ -10,13 +10,13 @@
   }
   .quick-links__contact,
   picture {
-    width: 152px;
+    width: 160px;
     height: 47px;
     overflow: hidden;
   }
   picture {
     img {
-      width: 152px;
+      width: 160px;
       height: 47px;
     }
     .st1{
@@ -40,7 +40,8 @@
         }
       }
   }
-  .quick-links__contact {
+  .quick-links__contact,
+  .quick-links__news {
     background-color: #524f55;
     text-align: center;
     text-transform: uppercase;
@@ -58,6 +59,13 @@
         color:$light-blue;
         transition: color 0.4s ease-in-out;
       }
+    }
+  }
+  .quick-links__news {
+    background-color: #026695;
+    width: 100%;
+    a {
+      padding-bottom: 10px;
     }
   }
   .btn-my-olc__svg {
