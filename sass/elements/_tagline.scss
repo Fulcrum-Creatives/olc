@@ -11,7 +11,7 @@
 }
 .tagline__heading {
   @include font-size(36);
-  margin: 0;
+  margin: 0 0 0.5em;
   @include media-query(480px) {
     @include font-size(53);
   }
