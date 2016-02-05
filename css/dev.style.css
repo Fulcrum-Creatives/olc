@@ -4,7 +4,7 @@ Theme URI: https://github.com/Fulcrum-Creatives/olc
 Author: Fulcrum Creatives
 Author URI: http://fulcrumcreatives.com/
 Description: Custom WordPress Framework
-Version: 1.3.2
+Version: 1.4.0
 Tags: 
 Text Domain: fcwp
 License: GNU General Public License v2 or later
@@ -988,7 +988,11 @@ picture {
  * Tagline
 ---------------------------------------------------------*/
 .tagline {
-  padding: 6em 1em;
+  padding: 5em 1em 2em;
+}
+
+.fp-boxes {
+  margin-top: 3em;
 }
 
 .tagline__heading,

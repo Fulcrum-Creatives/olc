@@ -10,6 +10,7 @@ get_header();
     while ( have_posts() ) : 
       the_post();
       get_template_part( 'template-parts/frontpage/content', 'tagline' );
+      get_template_part( 'template-parts/frontpage/content', 'announcement' );
       get_template_part( 'template-parts/frontpage/content', 'boxes' );
       get_template_part( 'template-parts/frontpage/divider' );
     endwhile; 
