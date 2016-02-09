@@ -85,4 +85,9 @@
 .fp-boxes__heading {
   @include font-size(25);
   text-transform: uppercase;
+  margin-top: 0;
+}
+
+.fp-boxes__img-wrapper {
+  margin-top: 1em;
 }

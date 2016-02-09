@@ -268,7 +268,13 @@ function fcwp_news_listing( $slug, $title, $post_per_page = '2' ) {
 function fcwp_display_box( $name, $url, $image, $retina, $svg, $alt, $heading, $text ) {
   ?>
   <a href="<?php echo $url; ?>" class="col__1-3 fp-boxes__url fp-boxes__<?php echo $name; ?>" rel="bookmark" aria-labelledby="<?php echo $name; ?>" role="link">
-    <span class="fp-boxes__img-wrapper">
+    <h3 id="advocacy" class="fp-boxes__heading">
+      <?php echo $heading; ?>
+    </h3>
+    <p class="fp-boxes__text">
+      <?php echo $text; ?>
+    </p>
+    <div class="fp-boxes__img-wrapper">
       <?php
         $box_paths = array(
           'image'  => $image,
@@ -277,13 +283,7 @@ function fcwp_display_box( $name, $url, $image, $retina, $svg, $alt, $heading, $
         ); 
         fcwp_svg( $box_paths, $alt, 'logo', 'svg fp-boxes__' . $name . '-svg' );
       ?>
-    </span>
-    <h3 id="advocacy" class="fp-boxes__heading">
-      <?php echo $heading; ?>
-    </h3>
-    <p class="fp-boxes__text">
-      <?php echo $text; ?>
-    </p>
+    </div>
   </a>
   <?php
 }
