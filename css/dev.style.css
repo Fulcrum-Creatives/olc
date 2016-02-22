@@ -1334,9 +1334,6 @@ picture {
   }
 }
 
-.company__address {
-  margin-bottom: 50px;
-}
 @media screen and (min-width: 990px) {
   .company__address {
     margin-bottom: none;
@@ -1900,6 +1897,64 @@ picture {
 }
 .social-links__icon:last-child {
   margin-right: 0;
+}
+
+/**--------------------------------------------------------
+ * Search Form
+ *---------------------------------------------------------*/
+.search__form {
+  position: relative;
+  float: none;
+  margin: 0 0 7em;
+  width: 285px;
+  font-family: Montserrat;
+}
+@media screen and (min-width: 990px) {
+  .search__form {
+    float: right;
+    margin: 1.5em 0 2em;
+  }
+}
+.search__form small {
+  padding-bottom: 5px;
+  display: block;
+}
+.search__form form {
+  position: relative;
+}
+.search__form .search__form-field {
+  border: 2px solid #008fc1;
+  border-radius: 8px 30px 30px 8px;
+  padding-left: 0.25em;
+  width: 100%;
+  height: 30px;
+}
+.search__form .search__form-btn {
+  position: absolute;
+  background-color: #008fc1;
+  width: 30px;
+  height: 30px;
+  right: 0px;
+  top: 0px;
+  border-radius: 30px;
+  outline: 0;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-size: 1em;
+  text-align: center;
+  padding-top: 6px;
+}
+.search__form .search__form-btn input {
+  background-color: transparent;
+  position: absolute;
+  border: none;
+  outline: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  right: 0px;
+  top: 0px;
 }
 
 /*---------------------------------------------------------

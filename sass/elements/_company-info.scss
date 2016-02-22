@@ -27,7 +27,6 @@
   }
 }
 .company__address {
-  margin-bottom: 50px;
   @include media-query(990px) {
     margin-bottom: none;
   }
