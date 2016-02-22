@@ -32,7 +32,7 @@ $olc_twitter      = fcwp_get_field( 'olc_twitter', true );
     </div>
     <?php
     endif;
-    if( $olc_linkedin ) :
+    if( $olc_twitter ) :
     ?>
     <div class="social-links__icon twitter">
       <a href="<?php echo $olc_twitter; ?>">
