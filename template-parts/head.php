@@ -11,4 +11,4 @@
 <![endif]-->
 </head>
 <body <?php body_class(); ?>>
-<a href="#main" class="skip-nav screen-reader-text"><?php _e('Skip to main Content', FCWP_TEXTDOMAIN); ?></a>
+<a href="#main" class="skip-nav screen-reader-text"><?php _e('Skip to main Content', 'fcwp'); ?></a>

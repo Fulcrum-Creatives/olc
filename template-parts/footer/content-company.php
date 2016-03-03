@@ -23,20 +23,19 @@ $olc_twitter      = fcwp_get_field( 'olc_twitter', true );
       </div>
     <?php
     endif;
-    if( $olc_linkedin ) :
-    ?>
-    <div class="social-links__icon linkedin">
-      <a href="<?php echo $olc_linkedin; ?>">
-        <i class="fa fa-linkedin-square"></i>
-      </a>
-    </div>
-    <?php
-    endif;
     if( $olc_twitter ) :
     ?>
     <div class="social-links__icon twitter">
       <a href="<?php echo $olc_twitter; ?>">
         <i class="fa fa-twitter"></i>
+      </a>
+    </div>
+    <?php endif; 
+    if( $olc_linkedin ) :
+    ?>
+    <div class="social-links__icon linkedin">
+      <a href="<?php echo $olc_linkedin; ?>">
+        <i class="fa fa-linkedin-square"></i>
       </a>
     </div>
     <?php endif; ?>

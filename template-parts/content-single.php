@@ -12,9 +12,9 @@
   wp_reset_postdata();
   ?>
   <div class="section-divider" role="divider">
-    <a href="<?php echo $category_link; ?>">
+    <a href="<?php echo home_url(); ?>/resources/news/">
       <p class="section-divider__text">
-        <?php _e( 'In Circulation: More in this category', FCWP_TEXTDOMAIN ) ?>
+        <?php _e( 'In Circulation: More News', 'fcwp' ) ?>
       </p>
     </a>
   </div>

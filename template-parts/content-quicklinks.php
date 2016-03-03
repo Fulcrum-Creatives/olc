@@ -1,7 +1,7 @@
 <div class="quick-links row">
   <div class="col__1-2 quick-links__news">
     <a href="<?php echo home_url(); ?>/resources/news/">
-      <?php _e( 'News', FCWP_TEXTDOMAIN ); ?>
+      <?php _e( 'News', 'fcwp' ); ?>
     </a>
   </div>
   <div class="col__1-2 quick-links__my-olc">
@@ -18,7 +18,7 @@
   </div>
   <div class="quick-links__contact">
     <a href="#contact-from" class="fancybox">
-      <?php _e( 'Contact', FCWP_TEXTDOMAIN ); ?>
+      <?php _e( 'Contact', 'fcwp' ); ?>
     </a>
   </div>
 </div>

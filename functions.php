@@ -7,13 +7,9 @@ $wp_theme = wp_get_theme();
 if ( ! defined( 'FCWP_VERSION' ) ) {
 	define( 'FCWP_VERSION', $wp_theme->get( 'Version' ) );
 }
-// Theme Taxdomain
-if ( !defined( 'FCWP_TEXTDOMAIN' ) ) {
-  define( 'FCWP_TEXTDOMAIN', $wp_theme->get( 'TextDomain' ) );
-}
 // Theme Prefix
 if ( ! defined( 'FCWP_PREFIX' ) ) {
-	define( 'FCWP_PREFIX', FCWP_TEXTDOMAIN );
+	define( 'FCWP_PREFIX', 'fcwp' );
 }
 // Theme Name
 if ( !defined( 'FCWP_NAME' ) ) {
@@ -38,7 +34,7 @@ if ( !defined( 'FCWP_DIR' ) ) {
 if( !function_exists( 'fcwp_theme_support' ) ) :
 	function fcwp_theme_support() {
 		// Load taxdomain
-		load_theme_textdomain( FCWP_TEXTDOMAIN, get_template_directory() . '/languages' );
+		load_theme_textdomain( 'fcwp', get_template_directory() . '/languages' );
 	    // Automatic Feed Support
 	    // add_theme_support( 'automatic-feed-links' );
 	    // Title Tage Support
@@ -80,7 +76,7 @@ if( !function_exists( 'fcwp_theme_support' ) ) :
 	    // add_theme_support( 'custom-header', $custom_header_args );
 	    // Register Nav Menus*/
 	    register_nav_menus( array(
-	        'primary' => __( 'Primary', FCWP_TEXTDOMAIN ),
+	        'primary' => __( 'Primary', 'fcwp' ),
 	    ) );
 	}
 	add_action( 'after_setup_theme', 'fcwp_theme_support' );
@@ -202,7 +198,7 @@ endif;
 ---------------------------------------------------------*/
 function fcwp_register_custom_sidebars() {
     register_sidebar( array(
-        'name'          => __( 'Sidebar', FCWP_TEXTDOMAIN ),
+        'name'          => __( 'Sidebar', 'fcwp' ),
         'id'            => 'sidebar',
         'description'   => '',
         'class'         => '',
@@ -229,7 +225,7 @@ function fcwp_news_listing( $slug, $title, $post_per_page = '2' ) {
   ?>
   <section class="entry__content content__entries">
     <h2 class="entry__category-title">
-      <?php _e( $title, FCWP_TEXTDOMAIN ) ?>
+      <?php _e( $title, 'fcwp' ) ?>
     </h2>
     <?php
       $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -249,7 +245,7 @@ function fcwp_news_listing( $slug, $title, $post_per_page = '2' ) {
         ?>
           <div class="entry__catagory-link">
             <a href="<?php echo $category_link; ?>">
-              <?php _e( 'View more form '. $title, FCWP_TEXTDOMAIN ); ?>
+              <?php _e( 'View more form '. $title, 'fcwp' ); ?>
             </a>
           </div>
         <?php
