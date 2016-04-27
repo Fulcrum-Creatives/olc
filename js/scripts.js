@@ -2563,8 +2563,7 @@ jQuery.extend( jQuery.easing,
   ---------------------------------------------------------*/
   $(function() {
     $('.fancybox').fancybox({
-      'scrolling': 'no',
-      'minHeight': '650px'
+      'scrolling': 'yes'
     });
   });
   /*---------------------------------------------------------
